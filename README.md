@@ -6,7 +6,7 @@ Clone this repository into a folder
 $ git clone https://github.com/chelahmy/foundation-react-template.git my-project
 $ cd my-project
 ```
-and run the following command to download dependencies including Foundation and React.
+and run the following command to download all dependencies including Foundation and React.
 ```
 $ npm i
 ```
