@@ -1,0 +1,4 @@
+$(document).foundation()
+
+require('./hello')
+
