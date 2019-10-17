@@ -5,7 +5,7 @@ This template comes with a tool-chain based on [Gulp](https://gulpjs.com) and [w
 
 The template is a [npm](https://www.npmjs.com) package. It requires [nodejs](https://nodejs.org/en/) for development automation. The resulting distribution files do not need npm or nodejs. The distribution can be installed in a static web server without any server-side dependency. It runs in a browser. It is the front-end.
 
-This template uses versions of Foundation and React as defined in the package.json file. You may want to update them to the latest versions before starting a new project. Please refer to the npm documentation to update packages.
+This template uses versions of Foundation and React as defined in the [package.json](https://github.com/chelahmy/foundation-react-template/blob/master/package.json) file. You may want to update them to the latest versions before starting a new project. Please refer to the npm documentation to update packages.
 
 ## Installation
 Clone this repository into a folder
