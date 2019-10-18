@@ -5,7 +5,7 @@ This template comes with a build tool-chain based on [Gulp](https://gulpjs.com) 
 
 The template is a [npm](https://www.npmjs.com) package. It requires [nodejs](https://nodejs.org/en/) for the build tool-chain. The resulting distribution files do not need npm or nodejs. The distribution can be installed in a static web server without any server-side dependency. It runs in a browser. It is the front-end.
 
-This template uses versions of Foundation and React as defined in the [package.json](https://github.com/chelahmy/foundation-react-template/blob/master/package.json) file. You may want to update them to the latest versions before starting a new project. Please refer to the npm documentation to update packages.
+This template uses versions of Foundation and React as defined in the [package.json](https://github.com/chelahmy/foundation-react-template/blob/master/package.json) file. You may want to update them to the latest versions before starting a new project. Please refer to the npm documentation to update packages. Warning: updating a package may break dependencies.
 
 ## Installation
 Clone this repository into a folder
@@ -25,6 +25,11 @@ $ npm start
 ```
 The tool-chain will build the project into the `dist` folder and run it in a browser. Any changes made in the `src` folder will trigger the tool-chain to rebuild the project and push the changes to the browser in real time. Remove the `dist` folder to rebuild the project.
 
-Begin with the `src/index.html` and `src/js/app.js` files. The resulting `dist` is standalone and can be deployed to a web server.
+Begin with the `src/index.html`, `src/js/app.js` and `src/scss/app.scss` files. The resulting `dist` is standalone and can be deployed to a web server.
+
+For building the project without watching the source files and triggering the browser
+```
+$ npm run build
+```
 
 Please refer to the Foundation and React websites for detail documentation regarding the individual frameworks.
