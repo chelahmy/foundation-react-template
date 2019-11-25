@@ -8,7 +8,7 @@ class Page extends React.Component {
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="large-12 cell">
-            <h1>Let's Synch</h1>
+            <h1>Hello Example</h1>
           </div>
           {this.props.children}
         </div>

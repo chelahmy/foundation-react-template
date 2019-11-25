@@ -1,14 +1,11 @@
-class HelloMessage extends React.Component {
+import React from 'react'
+
+export default class HelloMessage extends React.Component {
   render() {
     return (
-      <div>
+      <div class="callout primary">
         Hello {this.props.name}
       </div>
     );
   }
 }
-
-ReactDOM.render(
-  <HelloMessage name="Taylor" />,
-  document.getElementById('hello-example')
-);
