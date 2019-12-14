@@ -46,7 +46,7 @@ let react = () => {
 		.pipe(browserSync.stream())
 }
 
-let copy_src = () => {
+let copy_statics = () => {
 	return gulp.src([
 			'src/*.html'
 		])
@@ -58,28 +58,13 @@ let serve = () => {
 		server: './dist'
 	})
 
-	gulp.watch('src/scss/*.scss', sass)
-	gulp.watch(['src/js/*.js', 'src/js/*.jsx'], react)
-	gulp.watch('src/*.html', copy_src).on('change', browserSync.reload)
+	gulp.watch('src/scss/*.scss', sass).on('change', browserSync.reload)
+	gulp.watch(['src/js/*.js', 'src/js/*.jsx'], react).on('change', browserSync.reload)
+	gulp.watch('src/*.html', copy_statics).on('change', browserSync.reload)
 }
 
-/*
-gulp.task('copy-js-libs', () => {
-	return gulp.src([
-			'./node_modules/jquery/dist/jquery.min.js',
-			'./node_modules/what-input/dist/what-input.min.js',
-			'./node_modules/foundation-sites/dist/js/foundation.min.js',
-			'./node_modules/react/umd/react.development.js',
-			'./node_modules/react/umd/react.production.min.js',
-			'./node_modules/react-dom/umd/react-dom.development.js',
-			'./node_modules/react-dom/umd/react-dom.production.min.js'
-		])
-		.pipe(gulp.dest('./dist/js'))
-})
-*/
-
-gulp.task('copy-src', copy_src)
+gulp.task('copy-statics', copy_statics)
 gulp.task('sass', sass)
 gulp.task('react', react)
-gulp.task('serve', gulp.series('copy-src', 'sass', 'react', serve))
-gulp.task('default', gulp.series(/*'copy-js-libs',*/ 'copy-src', 'sass', 'react', serve))
+gulp.task('serve', gulp.series('copy-statics', 'sass', 'react', serve))
+gulp.task('default', gulp.series('copy-statics', 'sass', 'react', serve))

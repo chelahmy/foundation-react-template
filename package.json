@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp copy-js-libs copy-src sass react",
+    "build": "gulp copy-statics sass react",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abdullah Daud <chelahmy@gmail.com>",
@@ -15,7 +15,7 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ],  
+  ],
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
