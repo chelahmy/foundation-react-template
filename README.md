@@ -1,5 +1,5 @@
 # Foundation-React Template
-A starter for front-end project using both [Foundation](https://foundation.zurb.com) and [React](https://reactjs.org) frameworks.
+A starter for front-end project using both [Foundation](https://foundation.zurb.com) and [React](https://reactjs.org) frameworks. [Harubi Front](https://github.com/chelahmy/harubi-front) uses this template.
 
 Foundation is a responsive css-based framework. And React is a javascript-based UI framework. Fusing them together will complete a front-end baseline development template, and will lead developers to a different level of possibilities. Foundation uses [jQuery](https://jquery.com) so it is a bonus. But use jquery with care so not to snap the advantage of React virtual DOM.
 
